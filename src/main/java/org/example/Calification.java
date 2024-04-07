@@ -11,10 +11,11 @@ public class Calification {
     public Calification (double qualification, String nameSubject) {
         this.nameSubject=nameSubject;
         this.listQualification=new ArrayList<>();
+        this.listQualification.add(qualification);
     }
 
-    public void setNameSubjet(String nameSubjet) {
-        this.nameSubject = nameSubjet;
+    public void setNameSubjet(String nameSubject) {
+        this.nameSubject = nameSubject;
     }
 
     public void setListQualification(List<Double> listQualification) {
@@ -42,6 +43,7 @@ public class Calification {
         for (double element : listQualification) {
             sum += element;
         }
+        //System.out.println(listQualification.size());
         return sum / listQualification.size();
 
     }
